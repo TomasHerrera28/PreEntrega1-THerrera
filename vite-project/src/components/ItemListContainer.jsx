@@ -7,9 +7,9 @@ function ItemListContainer(props) {
 
     return (
 
-    <main className="p-4 grow">
+    <div className="p-4 grow text-xl">
         <h2>{props.greeting}</h2>
-    </main>
+    </div>
   )
 }
 

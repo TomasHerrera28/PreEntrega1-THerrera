@@ -1,19 +1,19 @@
-import './App.css'
-import Navbar from './components/Navbar.jsx'
+import { BrowserRouter } from 'react-router-dom'
 import Footer from './Footer.jsx'
-import ItemListContainer from './components/ItemListContainer.jsx'
+import Header from './Header.jsx'
+import Main from './components/Main.jsx'
+
 
 function App() {
-  
 
   return (
-    <>
-      <Navbar/>
-      <ItemListContainer
-        greeting="Bienvenidos a Panaderia Panovo!"
-      />
+
+    <BrowserRouter>
+      <Header/>
+      <Main/>
       <Footer/>
-    </>
+    </BrowserRouter>
+    
   )
 }
 

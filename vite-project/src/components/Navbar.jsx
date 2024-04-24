@@ -1,17 +1,22 @@
-import CartWidget from "./CartWidget"
+import { Link } from 'react-router-dom'
+import { Menu } from 'lucide-react'
 
 function Navbar() {
   return (
-        <header className="flex justify-between p-4 shadow-md bg-slate-500">
-            <h1 id="titulo" className="encabezado">Panaderia Panovo</h1>
-            <nav className="hidden md:flex md:gap-4">
-                <a href="#">Productos</a>
-                <a href="#">Novedades</a>
-                <a href="#">Contacto</a>
-                <img src="/menu-hamburguesa.png" alt="" />
-                <CartWidget />
-            </nav>
-        </header>
+        <nav className="flex items-center justify-center gap-4">
+
+            <div className="items-center hidden md:flex md:gap-4">
+
+                <Link to="/">Home</Link>
+
+                <Link to="/products">Productos</Link>
+
+                <Link to="/contact">Contacto</Link>
+                
+                <Menu width={20} height={20} className="md:hidden" />
+
+            </div>
+        </nav>
   )
 }
 
