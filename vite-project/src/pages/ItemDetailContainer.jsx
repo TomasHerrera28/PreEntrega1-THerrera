@@ -3,8 +3,21 @@ import Sacramento from "../assets/Sacramento.jpg"
 import Muffins from "../assets/Muffins.jpg"
 import Pan from "../assets/Pan.jpg"
 import Sandwich from "../assets/Sandwich.jpg"
+import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 function ItemDetailContainer() {
+
+  useEffect(() => {
+    const miPromesa = new Promise((res, rej) => { 
+      console.log("Pidiendo...")
+      setTimeout(()=>{
+          res()
+      },5000)
+  })
+  }, []);
+  
+
   return (
     <div>
       <h2 className="text-2xl">Nuestros productos</h2>
@@ -16,7 +29,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Sacramento'
         />
-        <button className="button">ver mas</button>
+        <Link to={"/products/detail"}>ver mas</Link>
       </div>
 
 
@@ -27,7 +40,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Muffins'
         />
-        <button className="button">ver mas</button>
+        <Link to={"/products/detail"}>ver mas</Link>
       </div>
 
       <div className="user-card flex flex-col items-center p-10">
@@ -37,7 +50,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Sándwich'
         />
-        <button className="button">ver mas</button>
+        <Link to={"/products/detail"}>ver mas</Link>
       </div>
 
       <div className="user-card flex flex-col items-center p-10">
@@ -47,7 +60,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Pan'
         />
-        <button className="button">ver mas</button>
+        <Link to={"/products/detail"}>ver mas</Link>
       </div>
 
 
