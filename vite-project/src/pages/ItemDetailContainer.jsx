@@ -16,7 +16,7 @@ function ItemDetailContainer() {
       },5000)
   })
   }, []);
-  
+
 
   return (
     <div>
@@ -29,7 +29,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Sacramento'
         />
-        <Link to={"/products/detail"}>ver mas</Link>
+        <Link to={"/products/detail/sacramento"}>ver mas</Link>
       </div>
 
 
@@ -40,7 +40,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Muffins'
         />
-        <Link to={"/products/detail"}>ver mas</Link>
+        <Link to={"/products/detail/muffins"}>ver mas</Link>
       </div>
 
       <div className="user-card flex flex-col items-center p-10">
@@ -50,7 +50,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Sándwich'
         />
-        <Link to={"/products/detail"}>ver mas</Link>
+        <Link to={"/products/detail/sandwich"}>ver mas</Link>
       </div>
 
       <div className="user-card flex flex-col items-center p-10">
@@ -60,7 +60,7 @@ function ItemDetailContainer() {
         <UserCard
         name='Pan'
         />
-        <Link to={"/products/detail"}>ver mas</Link>
+        <Link to={"/products/detail/pan"}>ver mas</Link>
       </div>
 
 
