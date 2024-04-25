@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Menu } from 'lucide-react'
+import { ShoppingCart } from 'lucide-react';
 
 function Navbar() {
   return (
@@ -12,8 +13,8 @@ function Navbar() {
                 <Link to="/products">Productos</Link>
 
                 <Link to="/contact">Contacto</Link>
-                
-                <Menu width={20} height={20} className="md:hidden" />
+
+                <ShoppingCart />3
 
             </div>
         </nav>
