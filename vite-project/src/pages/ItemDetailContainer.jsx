@@ -19,52 +19,55 @@ function ItemDetailContainer() {
 
 
   return (
-    <div>
+    <>
       <h2 className="text-2xl">Nuestros productos</h2>
 
-      <div className="user-card flex flex-col items-center p-10 group-hover:scale-50">
-        <img
-        src={Sacramento}
-        />
-        <UserCard
-        name='Sacramento'
-        />
-        <Link to={"/products/detail/sacramento"}>ver mas</Link>
-      </div>
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 users">
+
+        <div className="user-card flex flex-col items-center p-10">
+          <img
+          src={Sacramento}
+          />
+          <UserCard
+          name='Sacramento'
+          />
+          <Link to={"/products/detail/sacramento"}>ver mas</Link>
+        </div>
 
 
-      <div className="user-card flex flex-col items-center p-10">
-        <img
-        src={Muffins}
-        />
-        <UserCard
-        name='Muffins'
-        />
-        <Link to={"/products/detail/muffins"}>ver mas</Link>
-      </div>
+        <div className="user-card flex flex-col items-center p-10">
+          <img
+          src={Muffins}
+          />
+          <UserCard
+          name='Muffins'
+          />
+          <Link to={"/products/detail/muffins"}>ver mas</Link>
+        </div>
 
-      <div className="user-card flex flex-col items-center p-10">
-        <img
-        src={Sandwich}
-        />
-        <UserCard
-        name='Sándwich'
-        />
-        <Link to={"/products/detail/sandwich"}>ver mas</Link>
-      </div>
+        <div className="user-card flex flex-col items-center p-10">
+          <img
+          src={Sandwich}
+          />
+          <UserCard
+          name='Sándwich'
+          />
+          <Link to={"/products/detail/sandwich"}>ver mas</Link>
+        </div>
 
-      <div className="user-card flex flex-col items-center p-10">
-        <img
-        src={Pan}
-        />
-        <UserCard
-        name='Pan'
-        />
-        <Link to={"/products/detail/pan"}>ver mas</Link>
-      </div>
+        <div className="user-card flex flex-col items-center p-10">
+          <img
+          src={Pan}
+          />
+          <UserCard
+          name='Pan'
+          />
+          <Link to={"/products/detail/pan"}>ver mas</Link>
+        </div>
 
+      </section>
 
-      </div>
+    </>
   )
 }
 

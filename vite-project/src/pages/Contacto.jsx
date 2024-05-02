@@ -5,7 +5,7 @@ function Contacto() {
         <div>
             <h2>Contacto</h2>
             <form>
-                <input type="Ingresa tu email" />
+                <input type="" placeholder="Ingresa tu email" />
             </form>
         
         </div>

@@ -11,11 +11,6 @@ function UserCard(props) {
             
             <h3 className="text-xl">{props.name}</h3>
             
-             
-
-
-            {/* <Button>ver mas</Button> 
-            </div><Link to=>ver mas</Link>*/}
         
         </div>
   )
