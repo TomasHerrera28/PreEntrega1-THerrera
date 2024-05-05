@@ -31,7 +31,7 @@ function ItemDetailContainer() {
           <UserCard
           name='Sacramento'
           />
-          <Link to={"/products/detail/sacramento"}>ver mas</Link>
+          <Link to={"/products/detail/sacramento"} className="border-double p-1 border-4 border-yellow-500">ver mas</Link>
         </div>
 
 
@@ -42,7 +42,7 @@ function ItemDetailContainer() {
           <UserCard
           name='Muffins'
           />
-          <Link to={"/products/detail/muffins"}>ver mas</Link>
+          <Link to={"/products/detail/muffins"} className="border-double p-1 border-4 border-yellow-500">ver mas</Link>
         </div>
 
         <div className="user-card flex flex-col items-center p-10">
@@ -52,7 +52,7 @@ function ItemDetailContainer() {
           <UserCard
           name='Sándwich'
           />
-          <Link to={"/products/detail/sandwich"}>ver mas</Link>
+          <Link to={"/products/detail/sandwich"} className="border-double p-1 border-4 border-yellow-500">ver mas</Link>
         </div>
 
         <div className="user-card flex flex-col items-center p-10">
@@ -62,7 +62,7 @@ function ItemDetailContainer() {
           <UserCard
           name='Pan'
           />
-          <Link to={"/products/detail/pan"}>ver mas</Link>
+          <Link to={"/products/detail/pan"} className="border-double p-1 border-4 border-yellow-500">ver mas</Link>
         </div>
 
       </section>

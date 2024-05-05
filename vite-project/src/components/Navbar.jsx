@@ -8,11 +8,11 @@ function Navbar() {
 
             <div className="items-center hidden md:flex md:gap-4">
 
-                <Link to="/">Home</Link>
+                <Link to='/'>Home</Link>
 
-                <Link to="/products">Productos</Link>
+                <Link to='/category/:id'>Productos</Link>
 
-                <Link to="/contact">Contacto</Link>
+                <Link to='/contact'>Contacto</Link>
 
                 <ShoppingCart />3
 
